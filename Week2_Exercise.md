@@ -1,6 +1,10 @@
 # Week 2 Exercises
 This is a reference of Code for Week 2 Exercise.
 
+## Table of Contents
+1. [Week 2 Unit 1 Excercise](##week-2-unit-1-excercise)
+2. [Week 2 Unit 2 Excercise](##week-2-unit-2-excercise)
+
 ## Week 2 Unit 1 Excercise
 
 ### Define Aspect
@@ -56,4 +60,47 @@ ID;title;stock;price;author_ID;publisher_ID
 102;To the Lighthouse;5;385;202;302
 103;Don Quixote;2;600;203;303
 104;The Sun Also Rises;100;300;204;304
+```
+
+## Week 2 Unit 2 Excercise
+
+### Import Common Aspects
+```cds
+namespace com.bookshop;
+using { managed, cuid } from '@sap/cds/common';
+
+aspect additionalInfo {
+    name: String (120);
+}
+
+entity Books: managed, cuid {
+    title       : String(100);
+    stock       : Integer;
+    price       : Decimal(9,2);
+    author      : Association to Authors;
+    publisher   : Association to Publishers;
+}
+
+entity Authors: additionalInfo, managed, cuid {
+    books   : Composition of many Books on books.author = $self;
+}
+
+entity Publishers: additionalInfo, managed, cuid {
+    books   : Composition of many Books on books.publisher = $self;
+}
+```
+
+### Add new HTTP Request
+```http
+POST http://localhost:4004/admin/Authors
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "books": [{
+        "title": "Book of John Doe",
+        "stock": 100,
+        "price": 550.00
+    }]
+}
 ```
