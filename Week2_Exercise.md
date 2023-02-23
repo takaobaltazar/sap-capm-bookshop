@@ -104,3 +104,64 @@ Content-Type: application/json
     }]
 }
 ```
+
+## Week 2 Unit 3 Excercise
+
+### Add Access Control
+```cds
+using { com.bookshop as bookshop } from '../db/domain-model';
+
+service AdminService {
+    @insertonly
+    entity Books as projection on bookshop.Books;
+    entity Authors as projection on bookshop.Authors;
+    entity Publishers as projection on bookshop.Publishers;
+    
+    action submitOrder (bookId: Books:ID, quantity: Integer);
+}
+```
+
+### Add Input Validation
+```cds
+namespace com.bookshop;
+using { managed, cuid } from '@sap/cds/common';
+
+aspect additionalInfo {
+    name: String (120);
+}
+
+entity Books: managed, cuid {
+    title       : String(100) @mandatory;
+    stock       : Integer;
+    price       : Decimal(9,2);
+    author      : Association to Authors;
+    publisher   : Association to Publishers;
+}
+
+entity Authors: additionalInfo, managed, cuid {
+    books   : Composition of many Books on books.author = $self;
+}
+
+entity Publishers: additionalInfo, managed, cuid {
+    books   : Composition of many Books on books.publisher = $self;
+}
+```
+
+### Add New GET HTTP Request
+```http
+GET http://localhost:4004/admin/Books
+Content-Type: application/json
+```
+
+### Add New POST HTTP Request
+
+```http
+POST http://localhost:4004/admin/Books
+Content-Type: application/json
+
+{
+    "title": "",
+    "stock": 100,
+    "price": 550.00
+}
+```
