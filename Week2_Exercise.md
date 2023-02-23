@@ -4,6 +4,7 @@ This is a reference of Code for Week 2 Exercise.
 ## Table of Contents
 1. [Week 2 Unit 1 Excercise](##week-2-unit-1-excercise)
 2. [Week 2 Unit 2 Excercise](##week-2-unit-2-excercise)
+3. [Week 2 Unit 3 Excercise](##week-2-unit-3-excercise)
 
 ## Week 2 Unit 1 Excercise
 
