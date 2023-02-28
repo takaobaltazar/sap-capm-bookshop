@@ -166,3 +166,20 @@ Content-Type: application/json
     "price": 550.00
 }
 ```
+
+## Week 2 Unit 4 Excercise
+
+### Add @impl
+```cds
+using { com.bookshop as bookshop } from '../db/domain-model';
+
+@impl: './admin-custom-service.js' 
+service AdminService {
+    @insertonly
+    entity Books as projection on bookshop.Books;
+    entity Authors as projection on bookshop.Authors;
+    entity Publishers as projection on bookshop.Publishers;
+    
+    action submitOrder (bookId: Books:ID, quantity: Integer);
+}
+```
