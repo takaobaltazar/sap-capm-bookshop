@@ -175,11 +175,11 @@ using { com.bookshop as bookshop } from '../db/domain-model';
 
 @impl: './admin-custom-service.js' 
 service AdminService {
-    @insertonly
+    // @insertonly
     entity Books as projection on bookshop.Books;
     entity Authors as projection on bookshop.Authors;
     entity Publishers as projection on bookshop.Publishers;
     
     action submitOrder (bookId: Books:ID, quantity: Integer);
-}
+} 
 ```
