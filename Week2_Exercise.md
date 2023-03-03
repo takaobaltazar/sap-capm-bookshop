@@ -183,3 +183,25 @@ service AdminService {
     action submitOrder (bookId: Books:ID, quantity: Integer);
 } 
 ```
+
+### Add Custom Event Handler ‘.before’
+```js
+this.before('POST', 'Authors', async(req) => {
+    const splitName = req.data.name.split(" ");
+    const formattedName = splitName.map((item) => {
+        return item.charAt(0).toUpperCase() + item.slice(1).toLowerCase();
+    }).join(" ");
+
+    req.data.name = formattedName;
+});
+```
+
+### Add new HTTP Request
+```http
+POST http://localhost:4004/admin/Authors
+Content-Type: application/json
+
+{
+    "name": "jOhN dOe"
+}
+```
