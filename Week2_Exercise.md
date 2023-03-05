@@ -5,6 +5,8 @@ This is a reference of Code for Week 2 Exercise.
 1. [Week 2 Unit 1 Excercise](#week-2-unit-1-excercise)
 2. [Week 2 Unit 2 Excercise](#week-2-unit-2-excercise)
 3. [Week 2 Unit 3 Excercise](#week-2-unit-3-excercise)
+4. [Week 2 Unit 4 Excercise](#week-2-unit-4-excercise)
+5. [Week 2 Unit 5 Excercise](#week-2-unit-5-excercise)
 
 ## Week 2 Unit 1 Excercise
 
@@ -204,4 +206,41 @@ Content-Type: application/json
 {
     "name": "jOhN dOe"
 }
+```
+
+## Week 2 Unit 5 Exercise
+
+### Add JEST
+```js
+const path = require("path");
+const cds = require("@sap/cds/lib");
+cds.test(path.join(__dirname, ".."));
+
+describe("Check Admin Service", () => {
+    it("When Posting records for Books, it should return data", async () => {
+        // Arrange
+        const { Books } = cds.entities;
+        const bookTitle = "Book Sample";
+
+        // Act
+        await cds.create(Books, {
+            title: bookTitle
+        });
+        const [expectedResponse] = await cds.read(Books).where({title: bookTitle});
+
+        // Assert
+        expect(expectedResponse).toMatchObject({
+            title: bookTitle,
+            stock: null,
+            price: null,
+            author_ID: null,
+            publisher_ID: null
+        });
+    });
+});
+```
+
+### Execute JEST
+```
+npx jest test/admin-service.test.js
 ```
