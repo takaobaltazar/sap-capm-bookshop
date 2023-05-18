@@ -12,13 +12,11 @@ entity Books {
     title   : String(100);
     stock   : Integer;
     price   : Decimal(9,2);
-    author  : Association to Authors;
 }
 
 entity Authors {
     key ID  : Integer;
     name    : String(100);
-    books   : Composition of many Books on books.author = $self;
 }
 ```
 
@@ -27,31 +25,31 @@ entity Authors {
 using { com.bookshop as bookshop } from '../db/domain-model';
 
 service AdminService {
-    entity Books as projection on bookshop.Books;
-    entity Authors as projection on bookshop.Authors;
-}   
+    entity Books as SELECT from bookshop.Books;
+    entity Authors as SELECT from bookshop.Authors;
+}      
 ```
 
 ### Add Initial Data to Database
 
 Authors:
 ```csv
-ID;name
-200;Scott Fitzgerald
-201;Ralph Ellison
-202;Virginia Woolf
-203;Miguel de Cervantes
-204;Ernest Hemingway
+ID,name
+200,Scott Fitzgerald
+201,Ralph Ellison
+202,Virginia Woolf
+203,Miguel de Cervantes
+204,Ernest Hemingway
 ```
 
 Books:
 ```csv
-ID;title;stock;price;author_ID
-100;The Great Gatsby;10;500;200
-101;Invisible Man;50;400;201
-102;To the Lighthouse;5;385;202
-103;Don Quixote;2;600;203
-104;The Sun Also Rises;100;300;204
+ID,title,stock,price
+100,The Great Gatsby,10,500
+101,Invisible Man,50,400
+102,To the Lighthouse,5,385
+103,Don Quixote,2,600
+104,The Sun Also Rises,100,300
 ```
 
 ### Adding Custom Logic - Event Handler 
