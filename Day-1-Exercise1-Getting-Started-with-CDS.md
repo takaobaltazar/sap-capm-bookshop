@@ -1,7 +1,5 @@
-# Week 1 Exercises
-This is a reference of Code for Week 1 Exercise.
-
-## Week 1 Unit 3 Excercise
+# Day 1 Exercise
+This is a reference of Code for Day 1 Exercise.
 
 ### Define Data Model
 ```cds
