@@ -18,7 +18,6 @@ entity Books {
 
 entity Authors: additionalInfo {
     key ID  : Integer;
-    name    : String(100);
 }
 
 entity Publishers: additionalInfo {
@@ -56,7 +55,6 @@ entity Books {
 
 entity Authors : additionalInfo {
     key ID    : Integer;
-        name  : String(100);
         books : Composition of many Books
                     on books.author = $self;
 }
