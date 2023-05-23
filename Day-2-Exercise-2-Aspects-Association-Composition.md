@@ -1,5 +1,5 @@
-# Day 2 Exercise 1
-This is a reference of Code for Day 2 Exercise 1.
+# Day 2 Exercise 2
+This is a reference of Code for Day 2 Exercise 2
 
 ## Define Aspect and New Entity
 ```cds
