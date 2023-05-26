@@ -23,7 +23,7 @@ using {
 } from '@sap/cds/common';
 
 aspect additionalInfo {
-    name : String(120);
+    name : String(120) @mandatory;
 }
 
 entity Books : managed, cuid {
