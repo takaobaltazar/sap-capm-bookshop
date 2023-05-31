@@ -1,5 +1,5 @@
 # Day 4 Exercise 1
-This is a reference of Code for Day 4Exercise 1
+This is a reference of Code for Day 4 Exercise 1
 
 ## Preparation of SQLite
 ### Deploy to SQLite
@@ -8,11 +8,14 @@ This is a reference of Code for Day 4Exercise 1
 cds deploy --to sqlite
 ```
 
-2. The package.json will be modified to include the SQLite database
+2. The `package.json` will be modified to include the SQLite database
 
 ### Service running Persistent Database
-1. Run the app using `cds watch`.
-2. Service is now using the SQLite Database which will make data persistent.
+1. Run the app using
+```
+cds watch
+```
+3. Service is now using the SQLite Database which will make data persistent.
 <kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/47416c97-28a5-4c65-9694-e253fade08d3)</kbd>
 
 ## Setting up the SQL Tools
