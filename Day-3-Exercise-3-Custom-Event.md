@@ -12,7 +12,7 @@ service AdminService {
     entity Authors as projection on bookshop.Authors;
     entity Publishers as projection on bookshop.Publishers;
 
-    action submitOrder (bookId: Books, quantity: Integer);
+    action submitOrder (bookId: String, quantity: Integer);
 }
 ```
 
