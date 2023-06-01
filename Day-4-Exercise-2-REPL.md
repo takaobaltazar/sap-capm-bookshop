@@ -36,3 +36,38 @@ await cds.run(INSERT.into('com.bookshop.Books', { title: 'INSERT REPL'}))
 ```
 <kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/1c4bac50-5e6b-4ea7-ab26-e66288420353)</kbd><br>  
 <kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/1469ab87-cde0-4a91-96df-b6469d1bd81a)</kbd>
+
+## INSERT
+### Steps
+1. Use `INSERT` query to create record from local database.
+```cds
+await cds.run(INSERT.into('com.bookshop.Books', { title: 'INSERT REPL'}))
+```
+<kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/55e505a7-8302-4a8f-a186-a098ac8ffd7e) </kbd><br>  
+<kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/cc5f6afc-2c7a-447d-b527-7db8601d6d53) </kbd>
+
+2. Local database modified for new record.
+
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/75a2564c-9fae-441e-a24f-9aa500cd7125) </kbd>
+
+## UPDATE
+### Steps
+1. Use `UPDATE` query to modify record from local database. Replace `<INSERT ID>` with ID of record.
+```cds
+await cds.run(UPDATE('com.bookshop.Books').with({stock: 10, price: 50}).where({ID: <INSERT ID>}))
+```
+
+2. Local database modified for updated record.
+
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/a2f46e60-2b99-4a3a-8820-c359756a61bd) </kbd>
+
+## DELETE
+### Steps
+1. Use `DELETE` query to delete record from local database. Replace `<INSERT ID>` with ID of record
+```cds
+await cds.run(DELETE.from('com.bookshop.Books').where({ID: <INSERT ID>}))
+```
+
+2. Local database modified for deleted record.
+
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/b227e8cf-a8bf-47b0-965c-59313518a245) </kbd>
