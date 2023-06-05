@@ -6,6 +6,12 @@ This is a reference of Code for Day 4 Exercise 2
 1. Open `package.json`
 2. Add `model` section inside `cds > requires > db`.
 3. `Save` file.<br>  
+```cds
+"model": [
+    "db",
+    "srv"
+],
+```
 <kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/a8c54b4a-b19f-4e26-a030-d864a94ebbca)</kbd>
 
 ## Enable REPL
