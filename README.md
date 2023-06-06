@@ -22,6 +22,7 @@ This repository contains reference of code per exercise, to guide beginner in cr
 
 ### Day 5
 1. [Day 5 Exercise 1 - Add SAP Fiori Elements](/Day-5-Exercise-1-Add-SAP-Fiori-Elements.md)
+2. [Day 5 Exercise 2 - Add Annotation](/Day-5-Exercise-2-Add-Annotation.md)
 
 ### Day 6
 
