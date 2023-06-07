@@ -20,3 +20,23 @@ This is a reference of Code for Day 6 Exercise 1
 
 2. Debug View. <br>   
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/77c89746-9ebe-4877-b1e5-88ffebbda86d) </kbd>
+
+## Run existing HTTP Request
+### Steps
+1. Run your existing HTTP Request for POST `submitOrder`.
+```http
+### POST submitOrder - Custom event action
+POST http://localhost:4004/admin/submitOrder
+Content-Type: application/json
+
+{
+    "bookId": "3c013ac2-b1ae-461c-8ab0-2521d9f732b7",
+    "quantity": 9
+}
+```
+
+## Debugging Mode
+### Description
+After running an `HTTP Request`, and setting up breakpoint, you can now debug the code. <br>   
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/db153fcf-348c-4d27-aed4-83b0e1b0288d) </kbd>
+
