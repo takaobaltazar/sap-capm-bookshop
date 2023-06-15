@@ -34,5 +34,11 @@ cds add hana --for production
 2. The **package.json** will be modified and will include configuration for production database which is Hana Cloud. Also, the **yaml** file will be modified. <br>   
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/cf9e3cb8-ee79-4e19-a25c-3447e7078023) </kbd>
 
+### Steps: npm install
+1. Open **terminal** and execute command below to install dependencies.
+```cds
+npm install
+```
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/a587a26c-0fa1-415b-ba85-2c33bcbc4d3c) </kbd>
 
 
