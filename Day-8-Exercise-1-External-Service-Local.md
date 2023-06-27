@@ -7,7 +7,7 @@ This is a reference of Code for Day 8 Exercise 1
      - https://services.odata.org/v4/northwind/northwind.svc/$metadata
        <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/f5391250-058c-4f72-abb0-499d32d153a0) </kbd>
 
-## Import of EDXM
+## Import of EDMX
 ### Steps
 1. Import the **NorthWind.edmx** file into your **root** folder of **zbootcamp**.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/ce36de42-8aaa-46a6-a457-aff18a069a01) </kbd>
@@ -83,5 +83,13 @@ OrderID;ShipName;ShipAddress;ShipCity;ShipCountry
 },
 ```
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/4dd3497b-6135-4255-8eeb-6fee927a7250) </kbd>
+
+## Run Service
+1. Open **terminal** and run service using **cds watch**. This should now run **in-memory**.
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/3bf96865-2877-4ada-84ce-e5ef832a6c0d) </kbd>
+
+2. Select **Orders** under **/admin**.
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/7d50933a-d008-461c-ad2c-1c7747039eba) </kbd>
+
 
 
