@@ -1,22 +1,19 @@
-# Day 3 Exercise 3
+# Day 3 Exercise 3 - Custom Event
 This is a reference of Code for Day 3 Exercise 3
 
 ## Define Custom Event: Unbound Action
+### Steps:
+1. Open Service Definition **admin-service.cds**
+2. Define custom event **action** in Service Definition.
 ```cds
-using {com.bookshop as bookshop} from '../db/domain-model';
-
-@impl: './admin-custom-service.js' 
-service AdminService {
-    // @insertonly
-    entity Books   as projection on bookshop.Books;
-    entity Authors as projection on bookshop.Authors;
-    entity Publishers as projection on bookshop.Publishers;
-
-    action submitOrder (bookId: String, quantity: Integer);
-}
+action submitOrder (bookId: String, quantity: Integer);
 ```
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/c1cc7b06-41d7-4a26-b3a0-747c65d5253e) </kbd>
 
 ## Implementing Action
+### Steps:
+1. Open Service Implementation **admin-custom-service.js**
+2. Define custom event **unbound action** and name it to **submitOrder**. 
 ```js
 this.on('submitOrder', async (req) => {
     const { bookId, quantity } = req.data;
@@ -33,6 +30,9 @@ this.on('submitOrder', async (req) => {
 ```
 
 ## Add new POST HTTP Request
+### Steps:
+1. Open **bookshop-request.http**.
+2. Add **POST HTTP Request** for **submitOrder**.
 ```http
 ### POST submitOrder - Custom event action
 POST http://localhost:4004/admin/submitOrder
@@ -43,6 +43,10 @@ Content-Type: application/json
     "quantity": 9
 }
 ```
+
+3. Click **Send Request**.
+
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/4d250133-13ca-489a-b365-f695af1b3176) </kbd>
 
 
 
