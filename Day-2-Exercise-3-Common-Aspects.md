@@ -1,7 +1,9 @@
-# Day 2 Exercise 3
+# Day 2 Exercise 3 - Common Aspects
 This is a reference of Code for Day 2 Exercise 3
 
 ## Import Common Aspects
+### Steps
+1. Import the common aspect **managed** and **cuid** for all entities. 
 ```cds
 namespace com.bookshop;
 
@@ -32,8 +34,19 @@ entity Publishers : additionalInfo, managed, cuid {
                 on books.publisher = $self;
 }
 ```
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/791ec141-f012-489a-8cc6-5ab0ba1dddb5) </kbd>
+
+## Check Metadata
+### Steps
+1. Open **terminal** and run `cds watch`.
+2. Access the service and click the **/admin/$metadata**
+    <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/45ca6305-c22d-40e7-9e45-6096220098ee) </kbd>
+
 
 ## Create HTTP Request
+### Steps
+1. Create **test/HTTP** folder in your root workspace.
+2. Create HTTP request with file name **bookshop-request.http**
 ```http
 POST http://localhost:4004/admin/Authors
 Content-Type: application/json
@@ -47,3 +60,8 @@ Content-Type: application/json
     }]
 }
 ```
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/b973f8cb-150e-408e-8688-29bf2c8497f2) </kbd>
+
+3. Click **Send Request**.
+   
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/c8f1851a-4d72-4111-820d-fb9127813e6d) </kbd>
