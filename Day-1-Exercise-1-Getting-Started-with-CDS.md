@@ -90,3 +90,14 @@ ID,title,stock,price
 103,Don Quixote,2,600
 104,The Sun Also Rises,100,300
 ```
+
+## Service running with Data
+1. After you add initial data, your **cds watch** in terminal should restart to reflect the changes made in your file. In case you closed it, open again **terminal** and execute the **cds watch** command.
+2. Data are now loaded into the database.
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/18753a3d-2de1-4247-8ba2-bc69a6335c58) </kbd>
+
+3. Query / Access the service using path /admin.
+    - admin/Authors
+    - admin/Books    
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/7872b628-e775-4622-984c-d3ac50d65902) </kbd>
+
