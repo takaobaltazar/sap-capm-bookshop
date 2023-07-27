@@ -3,8 +3,8 @@ This is a reference of Code for Day 3 Exercise 1
 
 ## Add Access Control
 ### Steps:
-1. Open **admin-service.cds**
-2. Append `@insertonly` to Books entity. 
+1. Open **srv/admin-service.cds**
+2. Add `@insertonly` before Books entity. 
 ```cds
 @insertonly
 ```
@@ -12,8 +12,8 @@ This is a reference of Code for Day 3 Exercise 1
 
 ## Add Input Validation
 ### Steps:
-1. Open **domain-model.cds.**
-2. Append `@mandatory` to **title** and **name** field.
+1. Open **db/domain-model.cds.**
+2. Append `@mandatory` to `title` and `name` field.
 ```cds
 namespace com.bookshop;
 
@@ -48,8 +48,8 @@ entity Publishers : additionalInfo, managed, cuid {
 
 ## Add New GET HTTP Request
 ### Steps:
-1. Open **bookshop-request.http**
-2. Add **GET HTTP Request** for **Books** entity.
+1. Open **test/http/bookshop-request.http**
+2. Add **GET HTTP Request** for **Books** entity, and put the request in end of the line.
 ```http
 ### GET Books
 GET http://localhost:4004/admin/Books
@@ -63,8 +63,8 @@ Content-Type: application/json
 
 ## Add New POST HTTP Request
 ### Steps
-1. Open **bookshop-request.http**
-2. Add **POST HTTP Request** for **Books** entity.
+1. Open **test/http/bookshop-request.http**
+2. Add **POST HTTP Request** for **Books** entity, and put the request in end of the line.
 ```http
 ### POST Books with title empty
 POST http://localhost:4004/admin/Books
