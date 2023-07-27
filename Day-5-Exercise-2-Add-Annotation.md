@@ -4,7 +4,7 @@ This is a reference of Code for Day 5 Exercise 2
 ## Add annotation for Selection Fields
 ### Steps
 1. Open **annotation.cds** in `app` > `report` folder path. 
-2. Add annotations to service `Books`.
+2. Add annotations to service `Books` in end of the line.
 ```cds
 annotate service.Books with @(
     UI.SelectionFields: [title, stock, price]
@@ -23,7 +23,7 @@ annotate service.Books with @(
 
 ## Enable Draft
 ### Steps
-1. Open `admin-service.cds`.
+1. Open `srv/admin-service.cds`.
 2. Enable Draft to `Books` entity by adding `annotation` to Service Definition.
 ```cds
 @odata.draft.enabled
