@@ -6,8 +6,8 @@ This is a reference of Code for Day 3 Exercise 2
 1. Define a service implementation by creating a file **admin-service.js** in **srv** folder.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/4615afe7-8fad-4093-b834-df08a4d26fd8) </kbd>
 
-2. Open Service Implementation **admin-service.js**
-3. Define a custom event handler **this.after**.
+2. Open Service Implementation **srv/admin-service.js**
+3. Define a custom event handler `this.after`.
 ```js
 module.exports = function() {
     this.after('READ', 'Books', (each, req) => {
@@ -20,10 +20,10 @@ module.exports = function() {
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/cd649807-3ed5-404a-9688-3f707f2c744e) </kbd>
 
 ## Modify Service Definition
-Comment **@insertonly**
+Comment-out `@insertonly`
 ### Steps:
 1. Open Service definition **admin-service.cds**.
-2. Comment the code for `@insertonly` to allow us in executing other HTTP request for **Books** entity.  
+2. Comment-out the code for `@insertonly` to allow us in executing other HTTP request for **Books** entity.  
 ```cds
 // @insertonly
 ```
@@ -40,7 +40,8 @@ Comment **@insertonly**
 
 ## Add @impl
 ### Steps:
-1. Add annotation **@impl**.
+1. Open **srv/admin-service.cds**
+2. Add annotation **@impl**.
 ``` cds
 @impl: './admin-custom-service.js' 
 ```
@@ -48,7 +49,7 @@ Comment **@insertonly**
 
 ## Rename Service Implementation
 ### Steps:
-1. Rename the Service Implementation file from **admin-service.js** to **admin-custom-service.js**
+1. Rename the Service Implementation file from **admin-service.js** to **admin-custom-service.js** under **srv** folder.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/8fa44b1c-fcd2-4176-a527-ecb26c801623) </kbd>
 
 2. Open **terminal** and run `cds watch`.
@@ -59,8 +60,8 @@ Comment **@insertonly**
 
 ## Modify Service Implementation - Define Event Handler - ‘.before’
 ### Steps:
-1. Open Service Implementation **admin-custom-service.js**
-2. Define a custom event handler **this.before**.
+1. Open Service Implementation **srv/admin-custom-service.js**
+2. Define a custom event handler `this.before`.
 ```js
 this.before('POST', 'Authors', async(req) => {
     const splitName = req.data.name.split(" ");
@@ -76,7 +77,7 @@ this.before('POST', 'Authors', async(req) => {
 ## Add new HTTP Request
 ### Steps:
 1. Open **bookshop-request.http**.
-2. Add **POST HTTP Request** for **Authors** entity.
+2. Add **POST HTTP Request** for **Authors** entity, and put the request in end of the line.
 ```http
 ### POST Authors
 POST http://localhost:4004/admin/Authors
