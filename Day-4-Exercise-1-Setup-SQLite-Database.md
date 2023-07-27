@@ -27,7 +27,7 @@ cds watch
 
 ### Step 2: Setup SQL Tools
 1. Fill-up `mandatory fields` and click `Test Connection`.
-  - Connection name: `<Any name>`.
+  - Connection name: `Local SQLite Database`.
   - Database file: `/home/user/projects/zbootcamp/db.sqlite`.
 
 > Note: Right click your `db.sqlite` and select `Copy relative path` to get the link of `Database file`. Alternatively, you can type `pwd` in terminal.
@@ -42,4 +42,5 @@ cds watch
 ## Preview
 1. The `Tables` and `Views` should now be available after you connect.
 2. The `.sql` file allows you to execute query in `SQLite syntax`.
+3. To run a query, click the **Run on active connection** above your SQL query. Alternatively, **right click** > **Run query**
 ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/1665aec4-5316-4a5e-a17d-1cf0013e51cf)
