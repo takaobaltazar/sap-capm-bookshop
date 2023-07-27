@@ -3,7 +3,8 @@ This is a reference of Code for Day 2 Exercise 3
 
 ## Import Common Aspects
 ### Steps
-1. Import the common aspect **managed** and **cuid** for all entities. 
+1. Open `db/domain-model.cds`
+2. Import the common aspect **managed** and **cuid** for all entities. 
 ```cds
 namespace com.bookshop;
 
@@ -46,7 +47,7 @@ entity Publishers : additionalInfo, managed, cuid {
 ## Create HTTP Request
 ### Steps
 1. Create **test/HTTP** folder in your root workspace.
-2. Create HTTP request with file name **bookshop-request.http**
+2. Create HTTP request with file name **bookshop-request.http** and put under **HTTP** folder.
 ```http
 POST http://localhost:4004/admin/Authors
 Content-Type: application/json
@@ -62,6 +63,7 @@ Content-Type: application/json
 ```
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/b973f8cb-150e-408e-8688-29bf2c8497f2) </kbd>
 
-3. Click **Send Request**.
-   
+3. Click **Send Request** above your **POST <Link>**. Alternatively, you can do **right click** > **Send Request**
+
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/baa78f45-c079-4822-ac67-0223af84e8b3) </kbd>
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/c8f1851a-4d72-4111-820d-fb9127813e6d) </kbd>
