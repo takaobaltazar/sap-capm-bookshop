@@ -3,7 +3,7 @@ This is a reference of Code for Day 2 Exercise 1.
 
 ## Use Projection in Service Definition
 ### Steps
-1. Open **admin-service.cds**
+1. Open **srv/admin-service.cds**
 2. Replace `SELECT from` to `projection on`.
 
 ```cds
