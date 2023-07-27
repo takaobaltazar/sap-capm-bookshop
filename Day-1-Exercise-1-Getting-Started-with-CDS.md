@@ -11,22 +11,12 @@ This is a reference of Code for Day 1 Exercise.
     - Project Name: **zbootcamp**
     - Runtime: **Node.js**
     - Include feature: **MTA based SAP Business Technology Platform Deployment**
-4. Click **Finish.**                   
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/88549c46-6a92-470e-90f3-7c2a745a1777) </kbd>
+
+4. Click **Finish.**    
 
 ## Preview of Initial Project Workspace
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/c56d6017-1885-460a-bb0e-e6a81f9f6fab) </kbd>
-
-## Run Service
-Using **cds watch** to run the service.
-### Steps:
-1. Open **terminal.**                     
-2. Run your project using below command
-```cds
-cds watch
-```                 
-<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/d92b8a5c-2d8b-4a76-8498-3a935a0a6b6c) </kbd>
-
 
 ## Define Data Model
 ### Steps:
@@ -61,11 +51,25 @@ service AdminService {
 }      
 ```
 
-3. The **cds watch** reacted to the file change. In the log output, the service definition have been compiled.
-<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/ed259e51-a41a-46b3-b484-0384e0d12852) </kbd>
+## Run Service
+Using **cds watch** to run the service.
+### Steps:
+1. Open **terminal** by clicking the **Menu (Burger Icon)** > **Terminal** > **New Terminal**.
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/db4dfe5d-3619-447e-a7a9-fd6ba726b694) </kbd>
+                     
+2. Run your project using below command
+```cds
+cds watch
+```                 
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/14bde384-7668-4444-9cbc-8f1d628e9c5a) </kbd>
+
+3. Click **Open in a New Tab** button to view the service. It will open a new browser tab to display list of service endpoints.<br>   
+
 
 ## Add Initial Data to Database
-Add Initial data by creating files under **db/data**. Use below file name format.
+Create **data** folder under **db** root folder, to add Initial data. Use below file name format.   
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/3c32c3d3-8629-48bf-b111-b34c9c097f38) </kbd><br>   
+
 ### Steps:
 1. **db/data/com.bookshop.Authors.csv**:
 ```csv
