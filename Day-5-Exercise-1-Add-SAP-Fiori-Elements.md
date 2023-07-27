@@ -6,12 +6,12 @@ This is a reference of Code for Day 5 Exercise 1
 1. In `BAS`, open command palette (`Shift + Command + P for MAC` / `Ctrl + Shift + P for WIN`). Choose `Fiori: Open Application Generator`.<br>  
 <kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/99dabfec-14e3-4cfb-a78a-9040abe55a37)</kbd>
 
-2. Alternatively, from Get Started Page. Choose `Start from Template` > `SAP Fiori Application`.<br>   
+2. **Alternatively**, from Get Started Page. Choose `Start from Template` > `SAP Fiori Application`.<br>   
 <kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/e987c934-e2fe-404d-ad33-b485229294a1) </kbd>
 
 ## Template Selection
 ### Step
-1. Select `SAP Fiori` > `List Report Page` from Application Type. Click **Next**.<br>  
+1. Select `SAP Fiori` > `List Report Page` from Application Type. Click `Next`.<br>  
 <kbd>![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/7afa4244-977d-4dc4-bcaa-6fb6d2669fcf)</kbd>
 
 ## Data Source and Service Selection
@@ -34,7 +34,7 @@ This is a reference of Code for Day 5 Exercise 1
     - Module name: **report**
     - Application title: **Bookshop Report**
     - Application namespace: **com.ui.bookshop**
-    - Description: **A Fori application for Bookshop**
+    - Description: **A Fiori application for Bookshop**
     - Minimum SAPUI5 version: **1.114.0**
     - Add deployment configuration to MTA project: **Yes**
     - Add FLP configuration: **No**
