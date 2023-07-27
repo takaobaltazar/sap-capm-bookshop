@@ -3,8 +3,10 @@ This is a reference of Code for Day 2 Exercise 2
 
 ## Define Aspect and New Entity
 ### Steps:
-1. Open **domain-model.cds** file.
-2. Create **name aspect** and assigned it to entity.
+1. Open `db/domain-model.cds` file.
+2. Create **name aspect** as **additionalInfo** and assigned it to entity.
+3. Remove the **name** field in **Authors** entity.
+4. Create new entity **Publishers.**
 ```cds
 namespace com.bookshop;
 
@@ -31,7 +33,7 @@ entity Publishers: additionalInfo {
 
 ## Add new Entity in Service Definition
 ### Steps:
-1. Open **admin-service.cds**
+1. Open `srv/admin-service.cds`
 2. Include **Publisher** entity to Service Definition to expose the service.
 ```cds
 entity Publishers as projection on bookshop.Publishers;
@@ -48,7 +50,7 @@ entity Publishers as projection on bookshop.Publishers;
 
 ## Add Association and Composition
 ### Steps:
-1. Open **domain-model.cds**
+1. Open `db/domain-model.cds`
 2. Include relationship for each entity.
 ```cds
 namespace com.bookshop;
@@ -82,11 +84,13 @@ entity Publishers : additionalInfo {
 
 ## CDS Graphical Modeler
 You can define entity using **CDS Graphical Modeler**.
-It can be access by right click of **Service Definition** > **Opens With** > **CDS Graphical Modeler**.
+It can be access by right click of **Model Definition** > **Opens With** > **CDS Graphical Modeler**.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/0e3be667-126a-432b-be51-6e1bdddcdb66) </kbd>
 
 ## Add Initial Data to Publisher entity and Modify Data for Books entity.
-Add initial data by creating file under **db/data**.
+Add initial data by creating file under **db/data**.   
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/1b43df54-682f-4109-810f-9372fea16ad6) </kbd>
+
 ### Steps:
 1. **db/data/com.bookshop.Publishers.csv:**
 ```csv
