@@ -36,12 +36,13 @@ describe("Check Admin Service", () => {
 
 ## Execute JEST
 ### Steps
-1. Execute command to run JEST
+1. Open **terminal.**
+2. Execute command to run JEST
 ```js
 npx jest test/admin-service.test.js
 ```
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/9ff8f485-7e6a-43e0-b009-a69518859448) </kbd>
 
-2. Result from JEST <br>    
+3. Result from JEST <br>    
 
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/d6c14ec2-de0b-4e19-93f3-5787c20f746d) </kbd>
