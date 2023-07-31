@@ -75,7 +75,7 @@ OrderID;ShipName;ShipAddress;ShipCity;ShipCountry
 ## Include new profile
 ### Steps
 1. Open `package.json`
-2. Under **cds > requires**, replace **local profile** to your existing **db sqlite**.
+2. Under **cds > requires**, **replace local profile** to your existing **db sqlite**.
 ```cds
 "[local]": {
     "db": {
