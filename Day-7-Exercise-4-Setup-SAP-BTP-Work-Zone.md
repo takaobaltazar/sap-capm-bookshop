@@ -22,55 +22,58 @@ This is a reference of Code for Day 7 Exercise 4
 1. Click **Create Site**.               
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/cc932fd2-4aa0-4e1f-a7d6-998330ce75bf) </kbd>
 
-2. Enter **Site Name** and click **Create**.
+2. Enter **Site Name** and click **Create**.   
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/2f7be54c-9956-4613-a752-8b839a51871b) </kbd>
 
 3. **Site / Launchpad** is now created. Click the `<` back button to go back in home menu.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/179dcfdd-52ea-41ff-bde8-9fd7a399a602) </kbd>
 
-4. Go to **Content Manager** > **Content Explorer** and click the **HTML5 Apps**.
+4. Expand the Side Menu by clicking the **Burger Menu** and Go to **Content Manager** > **Content Explorer** and click the **HTML5 Apps**.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/671b5e12-e619-4782-bfe5-e27d6be60883) </kbd>
 
 5. Select the item **Bookshop Report** and click the **Add to My Content** button on the upper right screen.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/a3617cda-1e39-4e4d-92d9-3edd77906e28) </kbd>
 
-6. Under **Content Manager**, go to **My Content**. You should now be able to see the **Bookshop Report** we added.
+6. In case the item is not appearing, then go to **Channel Manager** and click **refresh** button.
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/bafe46ee-2964-4fdb-a41e-d6e2cc90925c) </kbd>
+
+7. Under **Content Manager**, go to **My Content**. You should now be able to see the **Bookshop Report** we added.
 
 #### Create Catalog
-7. Click **New** > **Catalog**.
+8. Click **New** > **Catalog**.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/0e3edad4-f752-42f9-9ffb-f737765c694c) </kbd>
 
-8. Enter **Title** and **Description**.
+9. Enter **Title** and **Description**.
     - Title: **Bookshop Catalog**
     - Description: **A Bookshop Catalog**
-9. On the **Assignments** tab, click the **search input** to display list. Now, click the `+` button to add our Fiori App in **Catalog**.
+10. On the **Assignments** tab, click the **search input** to display list. Now, click the `+` button to add our Fiori App in **Catalog**.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/39ecb6c2-cac5-4cac-bbf9-24cb03324bcd) </kbd>
 
-10. Click **Save** and go back to **Content Manager**.
+11. Click **Save** and go back to **Content Manager**.
 
 #### Create Group
-11. Under **Content Manager**, go to **My Content**. You should now be able to see the **Bookshop Catalog** we created.
-12. Click **New** > **Group**.
+12. Under **Content Manager**, go to **My Content**. You should now be able to see the **Bookshop Catalog** we created.
+13. Click **New** > **Group**.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/2da93321-b66c-46d0-963d-be6bf686007b) </kbd>
 
-13. Enter **Title** and **Description**.
+14. Enter **Title** and **Description**.
     - Title: **Bookshop Group**
     - Description: **A Bookshop Group**
-14. On the **Assignments tab**, click the **search input** to display list. Now, click the `+` button to add our Fiori App in **Group**.
+15. On the **Assignments tab**, click the **search input** to display list. Now, click the `+` button to add our Fiori App in **Group**.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/8e7cd2d5-bac6-401e-8fd7-4b0dc40c2e3e) </kbd>
 
-15. Click **Save** and go back to **Content Manager**.
+16. Click **Save** and go back to **Content Manager**.
 
 #### Setup Role
-16. After we configure the **Catalog** and **Group**, we will setup the **role**.
-17. For role, select **Everyone** from the table list. 
+17. After we configure the **Catalog** and **Group**, we will setup the **role**.
+18. For role, Open **Everyone** from the table list. 
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/41c0826e-6cf6-4dca-bdc2-9ff3acb5de2b) </kbd>
 
-18. Click **Edit**
-19. On the **Assignments tab**, click the **search input** to display list. Now, click the `+` button to add our Fiori App in **Role**.
+19. Click **Edit**
+20. On the **Assignments tab**, click the **search input** to display list. Now, click the `+` button to add our Fiori App in **Role**.
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/dce3c796-5f31-4b46-b01e-d291e9101352) </kbd>
 
-20. Click **Save** and go back to **Site Directory**.
+21. Click **Save** and go back to **Site Directory**.
 
 ### Access Site / FLP
 1. Open **Bootcamp Launchpad** by clicking the **open new window** icon.
