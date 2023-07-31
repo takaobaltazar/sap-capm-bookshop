@@ -12,7 +12,7 @@ This is a reference of Code for Day 7 Exercise 2
 
 ## Prepare for Production
 ### Steps: Approuter
-1. Open your project in SAP BTP and right click **mta.yaml** > **Create MTA Module from Template**.<br>   
+1. Open your project in SAP BTP and right click `mta.yaml > Create MTA Module from Template`.<br>   
 2. Select **Approuter Configuration**.<br>   
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/9e4e3995-aebd-4c5a-b57f-1f971b055657) </kbd>
 
@@ -22,7 +22,7 @@ This is a reference of Code for Day 7 Exercise 2
     - Do you plan to add a UI? **Yes**<br>   
     <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/e481c810-6499-468b-8e20-b529f011ac88) </kbd>
 
-4. It will now add approuter configuration to your **mta.yaml** file. Also, it will generate a new file **xs-security.json**<br>   
+4. It will now add approuter configuration to your **mta.yaml** file. Also, it will generate a new file `xs-security.json`<br>   
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/d091d382-2c44-4823-afcc-4feb3a2c5d0a) </kbd><br>    
 
 ### Steps: Add Hana
@@ -41,6 +41,13 @@ npm install
 ```
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/a587a26c-0fa1-415b-ba85-2c33bcbc4d3c) </kbd>
 
+### Steps: Install Modules
+1. Open again **terminal** and execute the command below:
+```cds
+npm i @sap/xssec
+npm i passport
+```
+
 ### Steps: Configure Destination
 1. **Right click** your root Fiori folder `(app/report)` > **Open Application Info**. <br>   
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/2c346ed6-697f-4ddc-bd80-c84d53be68d0) </kbd>
@@ -53,7 +60,7 @@ npm install
     - Destination Name: **Local CAP Project API (Instance Based Destination).**<br>   
     <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/50a85c48-46d4-4cf7-a923-b123b95147e0) </kbd>
     
-4. After you configure the destination, the **mta.yaml** and **xs-app.json** file will be modified.
+4. After you configure the destination, the **mta.yaml** and `xs-app.json` file will be modified.
     - `xs-app.json`<br>   
     <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/d9b6964b-a891-4522-87d6-314c517d7971) </kbd><br>   
     
@@ -70,7 +77,7 @@ npm install
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/8b695aba-bdbf-485e-b30d-1fb9569dac3b) </kbd>
 
 3. A window will appear to login into Cloud Foundry. Please enter your **credentials** and click **Sign in**.<br>   
-<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/8249fcb5-c4ca-4a85-995a-82e1e30ec499) </kbd>
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/5af524e5-61ee-4ac3-942d-a490abbaf88d) </kbd>
 
 4. Enter the correct Cloud Foundry Endpoint.<br>   
 <kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/5da0646c-b2e4-42f5-8080-5a71d3c5f301) </kbd>
