@@ -9,7 +9,11 @@ This is a reference of Code for Day 7 Exercise 3
 cd app/report
 npx -p @sap/ux-ui5-tooling fiori add flp-config
 ```
-<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/0c70e832-e85e-4a1c-84c9-60e16e5fc16f) </kbd> <br>   
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/0c70e832-e85e-4a1c-84c9-60e16e5fc16f) </kbd>
+
+3. After executing the command to configure the FLP Config, the **manifest.json** file will be modified:
+   
+<kbd> ![image](https://github.com/takaobaltazar/sap-capm-bookshop/assets/9301953/6e962f01-b99d-41a2-ad5c-c5c9ad1e6189) </kbd>
 
 ## Re-deploy application to SAP BTP
 ### Steps
