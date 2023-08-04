@@ -25,7 +25,20 @@ This repository contains reference of code per exercise, to guide beginner in cr
 2. [Day 5 Exercise 2 - Add Annotation](/Day-5-Exercise-2-Add-Annotation.md)
 
 ### Day 6
+1. [Day 6 Exercise 1 - Set Breakpoint Debug](/Day-6-Exercise-1-Set-Breakpoint-Debug.md)
+2. [Day 6 Exercise 2 - Unit Test JEST](/Day-6-Exercise-2-Unit-Test-JEST.md)
+3. [Day 6 Exercise 3 - Create SAP HANA Database](/Day-6-Exercise-3-Create-SAP-HANA-Database.md)
 
 ### Day 7
+1. [Day 7 Exercise 1 - Subscribe SAP Build Workzone](/Day-7-Exercise-1-Subscribe-SAP-Build-Workzone.md)
+2. [Day 7 Exercise 2 - Deploy SAP BTP Cloud Foundry](/Day-7-Exercise-2-Deploy-SAP-BTP-Cloud-Foundry.md)
+3. [Day 7 Exercise 3 - Add FLP Config Install Modules](/Day-7-Exercise-3-Add-FLP-Config-Install-Modules.md)
+4. [Day 7 Exercise 4 - Setup SAP BTP Work Zone](/Day-7-Exercise-4-Setup-SAP-BTP-Work-Zone.md)
 
 ### Day 8
+1. [Day 8 Exercise 1 - External Service Local](/Day-8-Exercise-1-External-Service-Local.md)
+2. [Day 8 Exercise 2 - External Service Remote](/Day-8-Exercise-2-External-Service-Remote.md)
+
+## Authors
+- [Takao Baltazar](https://github.com/daydroidmuchiri)
+- [Ginwene Rueda](https://github.com/kevinwairi)
